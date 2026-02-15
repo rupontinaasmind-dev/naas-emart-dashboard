@@ -49,7 +49,7 @@ function setupSidebar() {
 
             // Rotate toggle button arrow
 
-            const icon = sidebarToggle.querySelector('img');
+            const icon = sidebarToggle.querySelector('svg');
 
             if (sidebar.classList.contains('collapsed')) {
 
