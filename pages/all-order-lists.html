@@ -533,12 +533,329 @@
                   <li>Order List</li>
                   <li>/</li>
                   <li class="text-[#3C50E0]">All_Orders</li>
-                </ul>
-
-                
+                </ul>              
               </div>
             </div>
           </section>
+          <!-- All Orders Section -->
+          <section class="section-spaching-bottom">
+            <div class="content-header">
+              <h1>All Orders</h1>
+              <div class="header-actions">
+                <div class="search-filter-container">
+                  <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                  </div>
+                  <button class="filter-btn">
+                    <i class="fas fa-filter"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Table Section -->
+            <div class="table-container">
+              <div class="table-wrapper">
+                <table class="orders-table">
+                  <thead>
+                    <tr>
+                      <th>SI</th>
+                      <th>Order Id</th>
+                      <th>Order Date</th>
+                      <th>Customer Information</th>
+                      <th>Item Quantity</th>
+                      <th>Total Amount</th>
+                      <th>Order Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>#ORD001</td>
+                      <td>15 Feb 2026</td>
+                      <td>
+                        <div class="customer-info">
+                          <div class="customer-name">John Doe</div>
+                          <div class="customer-phone">+1234567890</div>
+                        </div>
+                      </td>
+                      <td>5</td>
+                      <td>
+                        <div class="amount-info">
+                          <div class="amount">$125.00</div>
+                          <div class="paid-status">paid</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="status-badge pending">Pending</span>
+                      </td>
+                      <td>
+                        <button class="action-btn">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>#ORD002</td>
+                      <td>15 Feb 2026</td>
+                      <td>
+                        <div class="customer-info">
+                          <div class="customer-name">Jane Smith</div>
+                          <div class="customer-phone">+0987654321</div>
+                        </div>
+                      </td>
+                      <td>3</td>
+                      <td>
+                        <div class="amount-info">
+                          <div class="amount">$87.50</div>
+                          <div class="paid-status">paid</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="status-badge confirmed">Confirmed</span>
+                      </td>
+                      <td>
+                        <button class="action-btn">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>#ORD003</td>
+                      <td>14 Feb 2026</td>
+                      <td>
+                        <div class="customer-info">
+                          <div class="customer-name">Mike Johnson</div>
+                          <div class="customer-phone">+1122334455</div>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>
+                        <div class="amount-info">
+                          <div class="amount">$210.00</div>
+                          <div class="paid-status">paid</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="status-badge processing">Processing</span>
+                      </td>
+                      <td>
+                        <button class="action-btn">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>#ORD004</td>
+                      <td>14 Feb 2026</td>
+                      <td>
+                        <div class="customer-info">
+                          <div class="customer-name">Sarah Wilson</div>
+                          <div class="customer-phone">+5544332211</div>
+                        </div>
+                      </td>
+                      <td>2</td>
+                      <td>
+                        <div class="amount-info">
+                          <div class="amount">$45.00</div>
+                          <div class="paid-status">paid</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="status-badge ready">Ready for delivery</span>
+                      </td>
+                      <td>
+                        <button class="action-btn">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>#ORD005</td>
+                      <td>13 Feb 2026</td>
+                      <td>
+                        <div class="customer-info">
+                          <div class="customer-name">David Brown</div>
+                          <div class="customer-phone">+9988776655</div>
+                        </div>
+                      </td>
+                      <td>6</td>
+                      <td>
+                        <div class="amount-info">
+                          <div class="amount">$156.75</div>
+                          <div class="paid-status">paid</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="status-badge on-way">Item on the way</span>
+                      </td>
+                      <td>
+                        <button class="action-btn">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>#ORD006</td>
+                      <td>13 Feb 2026</td>
+                      <td>
+                        <div class="customer-info">
+                          <div class="customer-name">Emma Davis</div>
+                          <div class="customer-phone">+1357924680</div>
+                        </div>
+                      </td>
+                      <td>4</td>
+                      <td>
+                        <div class="amount-info">
+                          <div class="amount">$98.00</div>
+                          <div class="paid-status">paid</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="status-badge delivered">Delivered</span>
+                      </td>
+                      <td>
+                        <button class="action-btn">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>#ORD007</td>
+                      <td>12 Feb 2026</td>
+                      <td>
+                        <div class="customer-info">
+                          <div class="customer-name">Chris Taylor</div>
+                          <div class="customer-phone">+2468013579</div>
+                        </div>
+                      </td>
+                      <td>7</td>
+                      <td>
+                        <div class="amount-info">
+                          <div class="amount">$189.25</div>
+                          <div class="paid-status">paid</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="status-badge pending">Pending</span>
+                      </td>
+                      <td>
+                        <button class="action-btn">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>#ORD008</td>
+                      <td>12 Feb 2026</td>
+                      <td>
+                        <div class="customer-info">
+                          <div class="customer-name">Lisa Anderson</div>
+                          <div class="customer-phone">+1234567890</div>
+                        </div>
+                      </td>
+                      <td>1</td>
+                      <td>
+                        <div class="amount-info">
+                          <div class="amount">$25.00</div>
+                          <div class="paid-status">paid</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="status-badge confirmed">Confirmed</span>
+                      </td>
+                      <td>
+                        <button class="action-btn">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>#ORD009</td>
+                      <td>11 Feb 2026</td>
+                      <td>
+                        <div class="customer-info">
+                          <div class="customer-name">Robert Martinez</div>
+                          <div class="customer-phone">+0987654321</div>
+                        </div>
+                      </td>
+                      <td>9</td>
+                      <td>
+                        <div class="amount-info">
+                          <div class="amount">$245.50</div>
+                          <div class="paid-status">paid</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="status-badge processing">Processing</span>
+                      </td>
+                      <td>
+                        <button class="action-btn">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>#ORD010</td>
+                      <td>11 Feb 2026</td>
+                      <td>
+                        <div class="customer-info">
+                          <div class="customer-name">Amy Thompson</div>
+                          <div class="customer-phone">+1122334455</div>
+                        </div>
+                      </td>
+                      <td>3</td>
+                      <td>
+                        <div class="amount-info">
+                          <div class="amount">$67.75</div>
+                          <div class="paid-status">paid</div>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="status-badge ready">Ready for delivery</span>
+                      </td>
+                      <td>
+                        <button class="action-btn">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- Pagination -->
+            <div class="pagination-container">
+              <div class="pagination-info">
+                <span>10 items per page</span>
+                <span class="item-count">1-10 of 200 items</span>
+              </div>
+              <div class="pagination-controls">
+                <button class="pagination-btn" disabled>
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn">4</button>
+                <button class="pagination-btn">5</button>
+                <button class="pagination-btn">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+
         </main>
         <footer class="flex justify-between px-[26px] py-4 bg-white">
           <p>© Naas-E-mart. 2025.</p>
