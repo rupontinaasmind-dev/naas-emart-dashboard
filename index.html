@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naas eMart</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <img class="logo" src="./assets/images/logo.png" alt="icon">
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <img src="./assets/images/arrow-double.svg" alt="icon">
+                </button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul class="nav-icons">
+                    <li class="cursor-pointer">
+                        <img src="./assets/images/dashboard.svg" alt="">
+                    </li>
+                    <li class="cursor-pointer">
+                        <img src="./assets/images/shopping.svg" alt="">
+                    </li>
+                    <li class="cursor-pointer">
+                        <img src="./assets/images/items.svg" alt="">
+                    </li>
+                    <li class="cursor-pointer">
+                        <img src="./assets/images/addons.svg" alt="">
+                    </li>
+                    <li class="cursor-pointer">
+                        <img src="./assets/images/category.svg" alt="">
+                    </li>
+                    <li class="cursor-pointer">
+                        <img src="./assets/images/tags.svg" alt="">
+                    </li>
+                    <li class="cursor-pointer">
+                        <img src="./assets/images/ticket.svg" alt="">
+                    </li>
+                    <li class="cursor-pointer">
+                        <img src="./assets/images/coupons.svg" alt="">
+                    </li>
+                    <li class="cursor-pointer">
+                        <img src="./assets/images/banner.svg" alt="">
+                    </li>
+                    <li class="cursor-pointer">
+                        <img src="./assets/images/balloon.svg" alt="">
+                    </li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <span>Dashboard</span>
+                        <ul class="pt-[10px] pl-6 submenu-main-wrap">
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/dashboard.svg" alt="">
+                                        <span>Dashboard</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                    <li>demo1</li>
+                                    <li>demo2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <span>Point of Sale</span>
+                        <ul class="pt-[10px] pl-6 submenu-main-wrap" >
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/shopping.svg" alt="">
+                                        <span>POS</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                    <li>demo1</li>
+                                    <li>demo2</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <span>Order Management</span>
+                        <ul class="pt-[10px] pl-6 submenu-main-wrap">
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/shopping.svg" alt="">
+                                        <span>Orders</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                        <li>demo1</li>
+                                        <li>demo2</li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <span>Item management</span>
+                        <ul class="pt-[10px] pl-6 submenu-main-wrap">
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/items.svg" alt="">
+                                        <span>Items</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                    <li>demo1</li>
+                                    <li>demo2</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/addons.svg" alt="">
+                                        <span>Addons</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                    <li>demo1</li>
+                                    <li>demo2</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/category.svg" alt="">
+                                        <span>Categories</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                    <li>demo1</li>
+                                    <li>demo2</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/tags.svg" alt="">
+                                        <span>Tag</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                    <li>demo1</li>
+                                    <li>demo2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <span>Marketing section</span>
+                        <ul class="pt-[10px] pl-6 submenu-main-wrap">
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/ticket.svg" alt="">
+                                        <span>Campaigns</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                        <li>demo1</li>
+                                        <li>demo2</li>
+                                    </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/coupons.svg" alt="">
+                                        <span>Coupons</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                        <li>demo1</li>
+                                        <li>demo2</li>
+                                    </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/banner.svg" alt="">
+                                        <span>Banners</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                        <li>demo1</li>
+                                        <li>demo2</li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <span>Advertisement Management</span>
+                        <ul class="pt-[10px] pl-6 submenu-main-wrap">
+                            <li class="nav-item has-submenu">
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="nav-link">
+                                        <img class="mr-[10px]" src="./assets/images/balloon.svg" alt="">
+                                        <span>Advertisement</span>
+                                    </a>
+                                    <button class="nav-toggle">
+                                        <img src="./assets/images/arrow-down2.svg" alt="">
+                                    </button>
+                                </div>
+                                <ul class="submenu">
+                                    <li>demo1</li>
+                                    <li>demo2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Mobile Sidebar Overlay -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="header section-spaching-bottom">
+                <div class="header-left">
+                    <button class="mobile-sidebar-toggle" id="mobileSidebarToggle">
+                        <!-- <i class="fas fa-bars"></i> -->
+                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1C0 0.446875 0.446875 0 1 0H13C13.5531 0 14 0.446875 14 1C14 1.55313 13.5531 2 13 2H1C0.446875 2 0 1.55313 0 1ZM2 6C2 5.44687 2.44687 5 3 5H15C15.5531 5 16 5.44687 16 6C16 6.55313 15.5531 7 15 7H3C2.44687 7 2 6.55313 2 6ZM14 11C14 11.5531 13.5531 12 13 12H1C0.446875 12 0 11.5531 0 11C0 10.4469 0.446875 10 1 10H13C13.5531 10 14 10.4469 14 11Z" fill="#545454"/>
+                        </svg>
+                    </button>
+                    <div class="search-bar">
+                        <img src="./assets/images/search.svg" alt="">
+                        <input type="text" placeholder="Type To Search...">
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class=" flex items-center gap-4">
+                        <button class="notification-btn btn-style">
+                            <img src="./assets/images/notification.svg" alt="">
+                        </button>
+                        <button class="msg-btn btn-style">
+                            <img src="./assets/images/msg.svg" alt="">
+                            <span class="badge"></span>
+                        </button>
+                        <button class="lang-btn btn-style flex items-center gap-[10px]">
+                            <span class="text-[#212B36]">En</span>
+                            <img src="./assets/images/arrow.svg" alt="">
+                        </button>
+                    </div>
+                    
+                    <div class="user-profile">
+                        <div class="user-info">
+                            <span class="user-name">Cyndy Lilibridge</span>
+                            <span class="user-role">Super Admin</span>
+                        </div>
+                        <img src="./assets/images/pp.png" alt="User" class="user-avatar">
+                        <img src="./assets/images/arrow-down3.svg" alt="">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <main class="dashboard-content">
+                <!-- Breadcrumbs -->
+                <section class="page-title">
+                    <div class="page-title-spaching-bottom">
+                        <h1>Dashboard</h1>
+                        <div class="flex justify-between items-center mb-8">
+                            <ul class="flex items-center gap-4">
+                                <li>Dashboard</li>
+                                <li>/</li>
+                                <li class="text-[#3C50E0]">Dashboard</li>
+                            </ul>
+                            
+                            <div class="filter-bar">
+                                <!-- Date Range -->
+                                <div class="date-range">
+                                    <img src="./assets/images/calendar.svg" alt="calendar" />
+                                    <span id="dateText">Dec 29, 2023 - Jan 4, 2024</span>
+                                    <input type="date" id="startDate" hidden>
+                                    <input type="date" id="endDate" hidden>
+                                </div>
+
+                                <!-- Dropdown -->
+                                <div class="range-select">
+                                    <select>
+                                    <option>Monthly</option>
+                                    <option>Weekly</option>
+                                    <option>Yearly</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Overview Cards -->
+                <section class="overview-cards section-spaching-bottom">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[27px]">
+                        <div class="stat-card bg-[#EEFFF0] rounded-lg shadow-md p-4 flex items-center space-x-3 hover:shadow-lg transition-shadow">
+                            
+                            <div class="card-content">
+                                <div class="flex items-center justify-between mb-[8px]">
+                                    <img src="./assets/images/earning.png" alt="Total earning picture">
+                                    <div class="flex items-center gap-[4px]">
+                                        <img src="./assets/images/arrow-up.svg" alt="">
+                                        <span class="text-[#25AC44]">18%</span>
+                                    </div>
+                                </div>
+                                <p class="stat-value ">$ 2,968.90</p>
+                                <h3 >Total Earning</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-[#FFFEF6] rounded-lg shadow-md p-4 flex items-center space-x-3 hover:shadow-lg transition-shadow">
+                            
+                            <div class="card-content">
+                                <div class="flex items-center justify-between mb-[8px]">
+                                    <img src="./assets/images/commission.png" alt="Commission given picture">
+                                    <div class="flex items-center gap-[4px]">
+                                        <img src="./assets/images/arrow-up.svg" alt="">
+                                        <span class="text-[#25AC44]">18%</span>
+                                    </div>
+                                </div>
+                                <p class="stat-value ">$ 390.66</p>
+                                <h3 >Commission Given</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-[#FFF6EA] rounded-lg shadow-md p-4 flex items-center space-x-3 hover:shadow-lg transition-shadow">
+                            
+                            <div class="card-content">
+                                <div class="flex gap-[8px] mb-[8px]">
+                                    <img src="./assets/images/item.png" alt="Items picture">
+                                </div>
+                                <p class="stat-value ">2600</p>
+                                <h3 >Total Item</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-[#EDFFF3] rounded-lg shadow-md p-4 flex items-center space-x-3 hover:shadow-lg transition-shadow">
+                            
+                            <div class="card-content">
+                                <div class="flex gap-[8px] mb-[8px]">
+                                    <img src="./assets/images/Instock.png" alt="in stock picture">
+                                </div>
+                                <p class="stat-value ">18.6K</p>
+                                <h3 >In Stock</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-[#F8EBEC] rounded-lg shadow-md p-4 flex items-center space-x-3 hover:shadow-lg transition-shadow">
+                            
+                            <div class="card-content">
+                                <div class="flex gap-[8px] mb-[8px]">
+                                    <img src="./assets/images/stockout.png" alt="Out of stock picture">
+                                </div>
+                                <p class="stat-value ">190</p>
+                                <h3>Out Of Stock</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-[#FFF4E6] rounded-lg shadow-md p-4 flex items-center space-x-3 hover:shadow-lg transition-shadow">
+                            
+                            <div class="card-content">
+                                <div class="flex items-center justify-between mb-[8px]">
+                                    <img src="./assets/images/confirmation.png" alt="commission picture">
+                                    <div class="flex items-center gap-[4px]">
+                                        <img src="./assets/images/arrow-up.svg" alt="">
+                                        <span class="text-[#25AC44]">18%</span>
+                                    </div>
+                                </div>
+                                <p class="stat-value ">15</p>
+                                <h3 >Waiting For Confirmation</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-[#EBF7FF] rounded-lg shadow-md p-4 flex items-center space-x-3 hover:shadow-lg transition-shadow">
+                            
+                            <div class="card-content">
+                                <div class="flex items-center justify-between mb-[8px]">
+                                    <img src="./assets/images/processing.png" alt="processing picture">
+                                    <div class="flex items-center gap-[4px]">
+                                        <img src="./assets/images/arrow-up.svg" alt="">
+                                        <span class="text-[#25AC44]">18%</span>
+                                    </div>
+                                </div>
+                                <p class="stat-value ">70</p>
+                                <h3 >Processing Order</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-[#FAFEEB] rounded-lg shadow-md p-4 flex items-center space-x-3 hover:shadow-lg transition-shadow">
+                            
+                            <div class="card-content">
+                                <div class="flex items-center justify-between mb-[8px]">
+                                    <img src="./assets/images/delivery.png" alt="delivery picture">
+                                    <div class="flex items-center gap-[4px]">
+                                        <img src="./assets/images/arrow-up.svg" alt="">
+                                        <span class="text-[#25AC44]">18%</span>
+                                    </div>
+                                </div>
+                                <p class="stat-value ">42</p>
+                                <h3 >Ready For Delivery</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-[#E4FBFF] rounded-lg shadow-md p-4 flex items-center space-x-3 hover:shadow-lg transition-shadow">
+                            
+                            <div class="card-content">
+                                <div class="flex items-center justify-between mb-[8px]">
+                                    <img src="./assets/images/delivered.png" alt="order picture">
+                                    <div class="flex items-center gap-[4px]">
+                                        <img src="./assets/images/arrow-up.svg" alt="">
+                                        <span class="text-[#25AC44]">18%</span>
+                                    </div>
+                                </div>
+                                <p class="stat-value">15k</p>
+                                <h3 >Delivered Order</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-[#FFF7F1] rounded-lg shadow-md p-4 flex items-center space-x-3 hover:shadow-lg transition-shadow">
+                            
+                            <div class="card-content">
+                                <div class="flex items-center justify-between mb-[8px]">
+                                    <img src="./assets/images/refunded.png" alt="Refunded picture">
+                                    <div class="flex items-center gap-[4px]">
+                                        <img src="./assets/images/arrow-up.svg" alt="">
+                                        <span class="text-[#25AC44]">18%</span>
+                                    </div>
+                                </div>
+                                <p class="stat-value ">$ 580.00</p>
+                                <h3 >Refunded</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Charts Section -->
+                <section class="charts-section section-spaching-bottom">
+                    <div class="chart-container bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Earning and Commission</h3>
+                        <div class="chart-placeholder h-64 bg-gray-50 rounded-lg flex items-center justify-center">
+                            <canvas id="earningChart"></canvas>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tables Section -->
+                <section class="tables-section section-spaching-bottom">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="table-container bg-white rounded-lg shadow-md">
+                            <div class="p-4 border-b border-gray-200">
+                                <h3 >Top Selling Product</h3>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="data-table w-full">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-padding">Product Name</th>
+                                            <th >Category</th>
+                                            <th >Price</th>
+                                            <th >Sold</th>
+                                            <th >Profit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white divide-y divide-gray-200">
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="flex gap-8 items-center">
+                                                <img class="custom-h-w" src="./assets/images/product-01.png" alt="">
+                                                Apple Watch Series 7
+                                            </td>
+                                            <td >Electronics</td>
+                                            <td >$269</td>
+                                            <td >22</td>
+                                            <td class="added-color">$45</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="flex gap-8 items-center">
+                                            <img class="custom-h-w" src="./assets/images/product-02.png" alt="">
+                                            Macbook Pro M1
+                                            </td>
+                                            <td >Electronics</td>
+                                            <td >$546</td>
+                                            <td >72</td>
+                                            <td class="added-color">$125</td>
+                                            
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="flex gap-8 items-center">
+                                                <img class="custom-h-w" src="./assets/images/product-03.png" alt="">
+                                                Dell Inspiron 15
+                                            </td>
+                                            <td >Electronics</td>
+                                            <td >$443</td>
+                                            <td >64</td>
+                                            <td class="added-color">$247</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="  flex gap-8 items-center">
+                                                <img class="custom-h-w" src="./assets/images/product-04.png" alt="">
+                                                HP Probook 450
+                                            </td>
+                                            <td >Electronics</td>
+                                            <td >$499</td>
+                                            <td >34</td>
+                                            <td class="added-color">$103</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="table-container bg-white rounded-lg shadow-md">
+                            <div class="p-4 border-b border-gray-200">
+                                <h3 >Top Rated Items</h3>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="data-table w-full">
+                                    <thead >
+                                        <tr>
+                                            <th class="table-padding">Product Name</th>
+                                            <th >Category</th>
+                                            <th >Price</th>
+                                            <th >Rating</th>
+                                            <th >Profit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white divide-y divide-gray-200">
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="flex gap-8 items-center">
+                                                <img class="custom-h-w" src="./assets/images/product-01.png" alt="">
+                                                Apple Watch Series 7
+                                            </td>
+                                            <td >Electronics</td>
+                                            <td >$269</td>
+                                            <td >
+                                                <div class="flex items-center gap-[2px]">
+                                                    <img src="./assets/images/star.svg" alt="">
+                                                    <span>5</span>
+                                                    <span class="added-style">(Reviews)</span>
+                                                </div>
+                                            </td>
+                                            <td class="added-color">$45</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="flex gap-8 items-center">
+                                            <img class="custom-h-w" src="./assets/images/product-02.png" alt="">
+                                            Macbook Pro M1
+                                            </td>
+                                            <td >Electronics</td>
+                                            <td >$546</td>
+                                            <td >
+                                                <div class="flex items-center gap-[2px]">
+                                                    <img src="./assets/images/star.svg" alt="">
+                                                    <span>5</span>
+                                                    <span class="added-style">(Reviews)</span>
+                                                </div>
+                                            </td>
+                                            <td class="added-color">$125</td>
+                                            
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="flex gap-8 items-center">
+                                                <img class="custom-h-w" src="./assets/images/product-03.png" alt="">
+                                                Dell Inspiron 15
+                                            </td>
+                                            <td >Electronics</td>
+                                            <td >$443</td>
+                                            <td >
+                                                <div class="flex items-center gap-[2px]">
+                                                    <img src="./assets/images/star.svg" alt="">
+                                                    <span>5</span>
+                                                    <span class="added-style">(Reviews)</span>
+                                                </div>
+                                            </td>
+                                            <td class="added-color">$247</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="flex gap-8 items-center">
+                                                <img class="custom-h-w" src="./assets/images/product-04.png" alt="">
+                                                HP Probook 450
+                                            </td>
+                                            <td >Electronics</td>
+                                            <td >$499</td>
+                                            <td >
+                                                <div class="flex items-center gap-[2px]">
+                                                    <img src="./assets/images/star.svg" alt="">
+                                                    <span>5</span>
+                                                    <span class="added-style">(Reviews)</span>
+                                                </div>
+                                            </td>
+                                            <td class="added-color">$103</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="flex justify-between px-[26px] py-4 bg-white">
+                <p>© Naas-E-mart. 2025.</p>
+                <ul class="flex gap-4 items-center">
+                    <li><a href="#">Profile</a></li>
+                    <li><img src="./assets/images/dot.svg" alt="dot"></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><img src="./assets/images/dot.svg" alt="dot"></li>
+                    <li><a href="#">Software version : 3.5</a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Chart.js for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
