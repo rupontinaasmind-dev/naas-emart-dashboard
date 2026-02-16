@@ -465,6 +465,14 @@ function setupSidebarSubmenus() {
 
         item.addEventListener("click", () => {
 
+            // Close all other submenus first
+            document.querySelectorAll(".has-submenu").forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove("active");
+                }
+            });
+
+            // Toggle current submenu
             item.classList.toggle("active");
 
         });

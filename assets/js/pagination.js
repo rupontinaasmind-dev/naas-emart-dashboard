@@ -67,8 +67,24 @@ $(document).ready(function() {
         const startIndex = (page - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         
+        // Hide all rows immediately
         rows.hide();
-        rows.slice(startIndex, endIndex).show();
+        
+        // Show new rows with animation
+        const newRows = rows.slice(startIndex, endIndex);
+        newRows.css({
+            'opacity': '0',
+            'transform': 'translateY(-30px)',
+            'transition': 'all 0.4s ease-out'
+        }).show();
+        
+        // Animate to normal position
+        setTimeout(() => {
+            newRows.css({
+                'opacity': '1',
+                'transform': 'translateY(0)'
+            });
+        }, 50);
         
         updatePaginationInfo(page);
         updatePaginationControls(page);
@@ -104,7 +120,6 @@ $(document).ready(function() {
             paginationControls.find('.pagination-btn:last').before(button);
         }
         
-        // Update prev/next button states
         // Disable left arrow on first page
         $('.pagination-btn:first').prop('disabled', page === 1);
         

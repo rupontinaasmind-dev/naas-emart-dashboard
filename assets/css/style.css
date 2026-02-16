@@ -985,6 +985,65 @@ body {
     cursor: not-allowed;
 }
 
+/* Page transition animations */
+.orders-table tbody tr {
+    transition: all 0.4s ease-in-out;
+}
+
+.orders-table tbody tr.slide-out {
+    opacity: 0;
+    transform: translateY(-20px);
+    position: absolute;
+    width: 100%;
+}
+
+.orders-table tbody tr.slide-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Page change animation */
+.page-transition {
+    animation: pageSlideDown 0.5s ease-out;
+}
+
+@keyframes pageSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pagination button animation */
+.pagination-btn {
+    transition: all 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-btn.active {
+    animation: buttonPulse 0.3s ease-in-out;
+}
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .dashboard-content {
